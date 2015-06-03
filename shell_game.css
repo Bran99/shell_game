@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#table {
+  width: 80%;
+  height: 220px;
+  background-color: green;
+  border: 5px groove brown;
+  border-radius: 20%;
+}
+
+.cup {
+  display: inline-block;
+  width: 131px;
+  height: 185px;
+  background-color: red;
+  transition: transform 1s ease;
+  left: 180px;
+  position: absolute;
+}
+
+.one {
+  transform: translateX(0px);
+}
+
+.two {
+  transform: translateX(200px);
+}
+
+.three {
+  transform: translateX(400px);
+}
+
+li {
+  list-style: none;
+}
+
+#ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  transition: all 1s ease;
+  transform: translateY(300px);
+  position: absolute;
+  left: 420px;
+}
+
+#ball.active {
+  transform: translateY(70px);
+}
+
+#ball.fadeOut {
+  opacity: 0;
+}
