@@ -5,12 +5,21 @@ body {
   align-items: center;
 }
 
+#start {
+  right: 60px;
+  top: 240px;
+  position: relative;
+
+}
+
 #table {
-  width: 80%;
+  width: 871px;
   height: 220px;
   background-color: green;
   border: 5px groove brown;
   border-radius: 20%;
+  position: absolute;
+  right: 270px;
 }
 
 .cup {
@@ -18,7 +27,7 @@ body {
   width: 131px;
   height: 185px;
   background-color: red;
-  transition: transform 1s ease;
+  transition: transform .25s ease;
   left: 180px;
   position: absolute;
 }
@@ -44,10 +53,9 @@ li {
   height: 50px;
   border-radius: 50%;
   background-color: blue;
-  transition: all 1s ease;
-  transform: translateY(300px);
+  transition: all .25s ease;
+  /*transform: translateX(300px);*/
   position: absolute;
-  left: 420px;
 }
 
 #ball.active {
